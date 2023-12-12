@@ -1,11 +1,5 @@
 let isPalindrome = function (x) {
-  let a = x.toString().split("").reverse().join("");
-
-  if (a == x) {
-    return true;
-  }
-
-  return false;
+  return x.toString().split("").reverse().join("") == x ? true : false;
 };
 
 console.log(isPalindrome(123321));
